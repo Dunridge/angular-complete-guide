@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-complete-guide';
+  // TODO: figure out how to disable tests for all generated stuff for the app
 }
