@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'angular-complete-guide';
+  name = 'Max';
   // TODO: figure out how to disable tests for all generated stuff for the app
 
   /*
