@@ -6,15 +6,4 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  name = 'Max';
-  // TODO: figure out how to disable tests for all generated stuff for the app
-
-  /*
-  Tip: How to disable all the tests for the application
-  Put the skipTests: true into the angular application schematic:
-  "@schematics/angular:application": {
-          "strict": true,
-          "skipTests": true
-        }
-  * */
 }
