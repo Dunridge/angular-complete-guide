@@ -1,7 +1,15 @@
-<input type="text" [(ngModel)]="userName">
-<p>Username: {{ userName }}</p>
-<button class="btn btn-success"
-        [disabled]="!userName"
-        (click)="onResetUser()"
->Reset user
-</button>
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <label for="username"></label>
+      <input id="username" class="form-control" type="text" [(ngModel)]="userName">
+      <p>Username: {{ userName }}</p>
+      <button class="btn btn-success"
+              [disabled]="!userName"
+              (click)="onResetUser()"
+      >Reset user
+      </button>
+    </div>
+  </div>
+</div>
+
