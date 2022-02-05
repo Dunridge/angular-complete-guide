@@ -1,0 +1,16 @@
+
+.app {
+  &__counter {
+    display: flex;
+
+    &--hidden {
+      display: none;
+    }
+  }
+
+  &__item {
+    &--color-white {
+      color: white;
+    }
+  }
+}
