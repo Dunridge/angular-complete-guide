@@ -3,7 +3,7 @@
   <button (click)="toggleDisplay()">{{buttonText}}</button>
   <div class="app__container">
     <p class="app__item"
-      *ngFor="let count of countContainer; let i = index"
+      *ngFor="let count of countContainer; let i = index; trackBy: trackByIndex"
       [ngClass]="{ 'app__item--color-white' : i >= 5 }"
       [ngStyle]="{ 'background-color': i >= 5 ? 'blue' : 'unset'}"
     >{{count}}</p>
