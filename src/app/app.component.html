@@ -8,9 +8,9 @@
 <!--      [ngStyle]="{ 'background-color': i >= 5 ? 'blue' : 'unset'}"-->
 <!--    >{{count}}</p>-->
     <p class="app__item"
-      *ngFor="let count of countContainer; trackBy: trackByIndex"
-      [ngClass]="{ 'app__item--color-white' : count >= 5 }"
-      [ngStyle]="{ 'background-color': count >= 5 ? 'blue' : 'unset'}"
-    >{{count}}</p>
+      *ngFor="let date of countContainer; let i = index; trackBy: trackByIndex"
+      [ngClass]="{ 'app__item--color-white' : i >= 5 }"
+      [ngStyle]="{ 'background-color': i >= 5 ? 'blue' : 'unset'}"
+    >{{date}}</p>
   </div>
 </div>

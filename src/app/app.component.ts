@@ -10,7 +10,7 @@ export class AppComponent {
   counterValue = 0;
   displayParagraph = false;
   buttonText = 'Display Details';
-  countContainer: number[];
+  countContainer: Date[];
 
   constructor() {
     this.countContainer = [];
@@ -23,6 +23,7 @@ export class AppComponent {
   toggleDisplay(): void {
     this.displayParagraph = !this.displayParagraph;
     this.counterValue++;
-    this.countContainer.push(this.counterValue);
+    // this.countContainer.push(this.counterValue);
+    this.countContainer.push(new Date());
   }
 }
