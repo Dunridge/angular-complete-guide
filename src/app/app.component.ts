@@ -6,9 +6,9 @@ import {Component} from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  buttonText = 'Display Details';
-  displayParagraph = false;
   counterValue = 0;
+  displayParagraph = false;
+  buttonText = 'Display Details';
   countContainer: number[];
 
   constructor() {
