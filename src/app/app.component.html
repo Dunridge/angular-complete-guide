@@ -2,11 +2,6 @@
   <p class="app__counter" [ngClass]="{'app__counter--hidden' : displayParagraph}">Secret Password = tuna</p>
   <button (click)="toggleDisplay()">{{buttonText}}</button>
   <div class="app__container">
-<!--    <p class="app__item"-->
-<!--      *ngFor="let count of countContainer; let i = index; trackBy: trackByIndex"-->
-<!--      [ngClass]="{ 'app__item&#45;&#45;color-white' : i >= 5 }"-->
-<!--      [ngStyle]="{ 'background-color': i >= 5 ? 'blue' : 'unset'}"-->
-<!--    >{{count}}</p>-->
     <p class="app__item"
       *ngFor="let date of countContainer; let i = index; trackBy: trackByIndex"
       [ngClass]="{ 'app__item--color-white' : i >= 5 }"

@@ -16,14 +16,13 @@ export class AppComponent {
     this.countContainer = [];
   }
 
-  trackByIndex(index: number): number {
-    return index;
-  }
-
   toggleDisplay(): void {
     this.displayParagraph = !this.displayParagraph;
     this.counterValue++;
-    // this.countContainer.push(this.counterValue);
     this.countContainer.push(new Date());
+  }
+
+  trackByIndex(index: number): number {
+    return index;
   }
 }
